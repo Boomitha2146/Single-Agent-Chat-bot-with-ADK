@@ -8,11 +8,10 @@ root_agent = Agent(
     instruction="You are a helpful AI assistant."
 )
 
-# Create runner
+# Create runner (THIS executes the agent)
 runner = Runner(root_agent)
 
 def run(user_input: str):
     """Run the ADK agent and return the response"""
-    result = runner.run(user_input)
-    return result
- result
+    response = runner.run(user_input)
+    return response
